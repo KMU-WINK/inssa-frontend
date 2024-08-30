@@ -21,7 +21,7 @@ export default function SignIn() {
     <div className='container'>
       <style.LogoContainer>
         <img src={logo} alt={'logo'} />
-        요즘 핫한 사진첩
+        요즘 핫한 인생네컷 사진첩
       </style.LogoContainer>
       <style.InformationContainer>
         <Input
