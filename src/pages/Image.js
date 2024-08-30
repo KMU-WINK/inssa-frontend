@@ -11,8 +11,8 @@ export default function Image() {
       <style.ImageContainer>
         <style.ImageDisplay src={src} alt={note} />
         <style.ImageDetails>
-          <div>메모: {note}</div>
           <div>날짜: {date}</div>
+          <div>메모: {note}</div>
         </style.ImageDetails>
       </style.ImageContainer>
     </div>
