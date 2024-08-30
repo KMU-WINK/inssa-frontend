@@ -1,22 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import box from '../../assets/footer/box.svg'
-import upload from '../../assets/footer/upload.svg'
-import pencil from '../../assets/footer/pencil.svg'
+// import upload from '../from../assets/footer/upload.svg'
 import styled from 'styled-components'
 
 export const Container = styled.div`
   position: fixed;
   bottom: 0;
-  align-items: center;
   display: flex;
   width: 430px;
   height: 80px;
   background-color: #2d2d2d;
   justify-content: center;
-`
-export const FooterContainer = styled.div`
   gap: 125px;
-  display: flex;
 `
 
 export const LogoContainer = styled.div`
@@ -24,40 +20,27 @@ export const LogoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 10px;
   color: white;
-  cursor: pointer;
-`
-export const PencilLogoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  color: white;
-  margin-top: 2px;
   cursor: pointer;
 `
 
 const Footer = () => {
+  const navigate = useNavigate()
+  const handleMypage = () => {
+    navigate('/my-page')
+  }
   return (
     <Container>
-      <FooterContainer>
-        <LogoContainer>
-          <img src={box} alt={'box'} />
-          보관함
-        </LogoContainer>
+      <LogoContainer onClick={handleMypage}>
+        <img src={box} alt={'box'} />
+        보관함
+      </LogoContainer>
 
-        <LogoContainer>
-          <img src={upload} alt={'upload'} />
-          등록
-        </LogoContainer>
-
-        <PencilLogoContainer>
-          <img src={pencil} alt={'pencil'} />
-          꾸미기
-        </PencilLogoContainer>
-      </FooterContainer>
+      {/*<LogoContainer onClick={handleMypage}>*/}
+      {/*  <img src={upload} alt={'upload'} />*/}
+      {/*  등록*/}
+      {/*</LogoContainer>*/}
     </Container>
   )
 }
