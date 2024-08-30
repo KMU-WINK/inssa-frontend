@@ -12,6 +12,7 @@ const StyledButton = styled.button`
   background-color: #fdd329;
   cursor: pointer;
   margin: 35px 0 10px 0;
+  border: none;
 `
 
 const SignButton = ({ children, onClick }) => {

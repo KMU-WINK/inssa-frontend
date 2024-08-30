@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   border-radius: 26px;
   background-color: #fdd329;
   cursor: pointer;
+  border: none;
 `
 
 const SignButton = ({ children, onClick }) => {
