@@ -1,8 +1,8 @@
 #App {
     max-width: 430px;
     margin: 0 auto;
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 1000px;
+    max-height: 500px;
     overflow-y: hidden;
     position: relative;
     font-family: 'Noto Sans KR', sans-serif;
